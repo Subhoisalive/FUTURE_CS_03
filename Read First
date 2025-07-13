@@ -1,0 +1,56 @@
+
+## 🔐 Encryption Details
+
+- **Algorithm**: AES (Advanced Encryption Standard)
+- **Key Size**: 128-bit (16 bytes)
+- **Mode**: ECB (Electronic Codebook) – for demo purposes only
+- **Padding**: Manual padding using spaces
+- **Key**: Static (demo use); should be secured in production
+
+> ⚠️ *For production use, switch to CBC or GCM mode with random IVs and environment-based key management.*
+
+## 📦 How to Run Locally
+
+### 1. Clone the Repo
+git clone https://github.com/your-username/secure-file-share.git
+# cd secure-file-share
+
+2. Set Up Virtual Environment
+python -m venv venv
+venv\Scripts\activate    # On Windows
+
+3. Install Dependencies
+pip install -r requirements.txt
+
+4. Start the Flask Server
+python app.py
+Open your browser: 👉 http://127.0.0.1:5000
+
+📄 Security Overview
+Files are encrypted with AES before saving
+Decryption only occurs at the time of download
+Encryption key is hardcoded for demo; ideally it should be stored securely (e.g., environment variables or a secure key vault)
+File names are preserved with .enc extension
+Decrypted files are not permanently stored, only generated on request
+
+📁 Resources
+Flask Documentation
+PyCryptodome Docs
+MDN HTML Reference
+🙋‍♂️ Author
+Suvhankar Dutta
+Cybersecurity Enthusiast & Developer
+
+Structure will be:
+secure-file-share/
+│
+├── app.py # Main Flask application
+├── encryption.py # AES encrypt/decrypt logic
+├── requirements.txt # Installed Python packages
+│
+├── templates/
+│ └── index.html # Web interface (upload/download)
+│
+├── uploads/ # Stores encrypted files (.enc)
+├── decrypted/ # Stores decrypted output
+└── venv/ # Virtual environment
