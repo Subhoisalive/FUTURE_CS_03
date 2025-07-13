@@ -1,27 +1,48 @@
-# 🔐 Secure File Sharing System with AES Encryption
+# 🔐 Secure File Sharing System — Cyber Security Task 3
 
-This is a secure file sharing web application built using **Python Flask** and **AES encryption** (via PyCryptodome). It allows users to **upload and download encrypted files** through a simple web interface.
+> Developed as part of the **Cyber Security Internship** at **Future Interns**.
 
- ✅ Created as part of **Cybersecurity Task 3** for my internship at **Future Interns**.
-
-
-## 🚀 Features
-
-- 🔐 **AES-128 Encryption** (ECB mode) for file security
-- 📥 **File Upload** with automatic encryption
-- 📤 **File Download** with automatic decryption
-- 🧠 **Simple Key Management** (demo-safe)
-- 🌐 **Web Interface** using HTML & Flask
-- 📁 Organized upload/decrypt directories
+This project demonstrates a secure file sharing system using **AES encryption** for safe file uploads and downloads. It simulates a real-world solution for scenarios like secure document exchange in **healthcare**, **legal**, or **corporate environments**.
 
 
-## 🛠️ Tech Stack
+## 📌 About the Task
 
-| Technology     | Purpose                |
-|----------------|------------------------|
-| Python 3.11    | Programming Language   |
-| Flask          | Web Framework (Backend)|
-| PyCryptodome   | Cryptography Library   |
-| HTML/CSS       | Web UI                 |
-| VS Code        | Development IDE        |
+In this hands-on internship project, I built a **simple yet secure file sharing system** with the following features:
 
+- Upload and download files through a Flask-based web portal
+- Apply **AES encryption** to all files before saving
+- Decrypt files securely on download
+- Basic **key management**
+- Document the system architecture, code, and encryption strategy
+
+## ✅ What I Did
+
+- 🔧 Built a full-stack application using **Python Flask**
+- 🔐 Used **AES (128-bit ECB)** encryption via **PyCryptodome**
+- 📤 Implemented file upload, encryption, and secure storage
+- 📥 Built download flow with automatic decryption
+- 🌐 Designed a simple HTML frontend with basic forms
+- 🧪 Tested for integrity and functionality
+- 📄 Documented the encryption logic and code structure
+
+
+## 🎯 Skills Gained
+
+- Backend web development with Flask
+- Implementing AES encryption in Python
+- Secure file handling & data protection techniques
+- Basic cryptographic key management
+- Version control with Git & GitHub
+- Hands-on Flask + Cryptography integration
+
+
+## 🛠️ Tools & Technologies Used
+
+| Tool              | Purpose                                     |
+|-------------------|---------------------------------------------|
+| Python Flask      | Backend Web Framework                       |
+| PyCryptodome      | AES Encryption & Decryption (Python Crypto) |
+| HTML / CSS        | Frontend Web Interface                      |
+| Git & GitHub      | Version Control                             |
+| Postman / curl    | API Testing                                 |
+| VS Code           | IDE / Code Editor                           |
